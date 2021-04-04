@@ -407,10 +407,10 @@
     <Content Include="image\car\Lincoln\Nautilus\2.jpg" />
     <Content Include="image\car\Lincoln\Nautilus\3.jpg" />
     <Content Include="image\car\Lincoln\Nautilus\4.jpg" />
-    <Content Include="image\car\Lotus\1.jpg" />
-    <Content Include="image\car\Lotus\2.jpg" />
-    <Content Include="image\car\Lotus\3.jpg" />
-    <Content Include="image\car\Lotus\4.jpg" />
+    <Content Include="image\car\Lotus\Evora\1.jpg" />
+    <Content Include="image\car\Lotus\Evora\2.jpg" />
+    <Content Include="image\car\Lotus\Evora\3.jpg" />
+    <Content Include="image\car\Lotus\Evora\4.jpg" />
     <Content Include="image\car\Maserati\Ghibli\1.jpg" />
     <Content Include="image\car\Maserati\Ghibli\2.jpg" />
     <Content Include="image\car\Maserati\Ghibli\3.jpg" />
