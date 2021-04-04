@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\index.css" />
+    <Content Include="Global.asax" />
     <Content Include="image\car-classify-icon\iconConvertable.svg" />
     <Content Include="image\car-classify-icon\iconCoupes.svg" />
     <Content Include="image\car-classify-icon\iconHatchbacks.svg" />
@@ -147,18 +148,18 @@
     <Content Include="image\car\Acura\NSX\2.jpg" />
     <Content Include="image\car\Acura\NSX\3.jpg" />
     <Content Include="image\car\Acura\NSX\4.jpg" />
-    <Content Include="image\car\Alfa Romeo\4C\4C 1.jpg" />
-    <Content Include="image\car\Alfa Romeo\4C\4C 2.jpg" />
-    <Content Include="image\car\Alfa Romeo\4C\4C 3.jpg" />
-    <Content Include="image\car\Alfa Romeo\4C\4C 4.jpg" />
-    <Content Include="image\car\Alfa Romeo\Giulia\Giulia 1.jpg" />
-    <Content Include="image\car\Alfa Romeo\Giulia\Giulia 2.jpg" />
-    <Content Include="image\car\Alfa Romeo\Giulia\Giulia 3.jpg" />
-    <Content Include="image\car\Alfa Romeo\Giulia\Giulia 4.jpg" />
-    <Content Include="image\car\Alfa Romeo\Stelvio\Stelvio 1.jpg" />
-    <Content Include="image\car\Alfa Romeo\Stelvio\Stelvio 2.jpg" />
-    <Content Include="image\car\Alfa Romeo\Stelvio\Stelvio 3.jpg" />
-    <Content Include="image\car\Alfa Romeo\Stelvio\stevlio 4.jpg" />
+    <Content Include="image\car\Alfa Romeo\4C\1.jpg" />
+    <Content Include="image\car\Alfa Romeo\4C\2.jpg" />
+    <Content Include="image\car\Alfa Romeo\4C\3.jpg" />
+    <Content Include="image\car\Alfa Romeo\4C\4.jpg" />
+    <Content Include="image\car\Alfa Romeo\Giulia\1.jpg" />
+    <Content Include="image\car\Alfa Romeo\Giulia\2.jpg" />
+    <Content Include="image\car\Alfa Romeo\Giulia\3.jpg" />
+    <Content Include="image\car\Alfa Romeo\Giulia\4.jpg" />
+    <Content Include="image\car\Alfa Romeo\Stelvio\1.jpg" />
+    <Content Include="image\car\Alfa Romeo\Stelvio\2.jpg" />
+    <Content Include="image\car\Alfa Romeo\Stelvio\3.jpg" />
+    <Content Include="image\car\Alfa Romeo\Stelvio\4.jpg" />
     <Content Include="image\car\Audi\A8\1.jpg" />
     <Content Include="image\car\Audi\A8\2.jpg" />
     <Content Include="image\car\Audi\A8\3.jpg" />
@@ -549,18 +550,21 @@
     <Content Include="image\research-and-compare.svg" />
     <Content Include="index.html" />
     <Content Include="javascript\index.js" />
-    <Content Include="SearchReuilt.aspx" />
+    <Content Include="SearchReult.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Car.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SearchReuilt.aspx.cs">
-      <DependentUpon>SearchReuilt.aspx</DependentUpon>
+    <Compile Include="SearchReult.aspx.cs">
+      <DependentUpon>SearchReult.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="SearchReuilt.aspx.designer.cs">
-      <DependentUpon>SearchReuilt.aspx</DependentUpon>
+    <Compile Include="SearchReult.aspx.designer.cs">
+      <DependentUpon>SearchReult.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
