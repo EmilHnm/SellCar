@@ -1,6 +1,10 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="SellCar.index" %>
+
+<!DOCTYPE html>
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head runat="server">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +12,6 @@
     <link rel="stylesheet" href="css/index.css">
     <script src="javascript/index.js"></script>
     <style>
-        .logo a img {
-            background: linear-gradient(120deg,#ffffff, #ffa500);
-            border-radius: 0px 0px 20px 20px;
-            box-shadow: 0px 7px 20px 0px #000;
-        }
         /* page 1 */
         .first-main-page {
             display: flex;
@@ -290,7 +289,7 @@
         <nav class="navbar">
                 <div class="logo">
                     <a href="index.html">
-                        <img src="image/logo.png" alt="" srcset="" width="100px;">
+                        Bán Ô Tô
                     </a>
                 </div>
                 <label for="nav-active" class="menu-button"><img src="image/icon/menu-24px.svg" alt="" srcset=""></label>
@@ -303,8 +302,8 @@
                         <a href="" class="navbar-item">Đại lý ô tô</a>
                         <a href="" class="navbar-item">Khuyến mãi</a>
                         <a href="" class="navbar-item">Tin tức</a>
-                        <a href="login resgister.html" class="log-button">Đăng nhập</a>
-                        <a href="login resgister.html"" class="log-button">Đăng ký</a>
+                        <a href="" class="log-button">Đăng nhập</a>
+                        <a href="" class="log-button">Đăng ký</a>
                     </div>
             </div>
         </nav>

@@ -29,6 +29,7 @@ a {
     align-items: stretch;
 }
 .navbar-item, .log-button {
+            
     color: #fff;
     display: inline-block;
     height: 47px;

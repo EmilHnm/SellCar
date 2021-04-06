@@ -15,7 +15,7 @@ namespace SellCar
             Car cars = new Car();
             string[,] CarInfo = cars.NewCarInfo;
             string Manu = Request.QueryString["manu"];
-            string Model = Request.QueryString["Model"];
+            string Model = Request.QueryString["model"];
             string Classify = Request.QueryString["Classify"];
             if (Classify == null)
             {

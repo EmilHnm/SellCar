@@ -65,11 +65,14 @@
             height: 150px;
             overflow: hidden;
         }
+        .car-result:hover {
+            box-shadow: #ffa600a4 0px 0px 10px 5px;
+        }
         .car-result, .picture {
             display: inline-flex;
         }
         .picture img{
-            width: 25vw;
+            width: 20vw;
             border-radius: 10px;
         }
         .picture {
@@ -81,6 +84,9 @@
         .title {
             font-size: 20px;
             font-weight: bold;
+        }
+        .title:hover {
+            color: orange;
         }
         .classify {
             width: max-content;
@@ -97,6 +103,36 @@
         .decribe-content {
             height: 70px;
             overflow: hidden;
+        }
+        @media screen and (max-width:675px) {
+            main {
+                grid-template-columns: auto;
+                padding: 10px;
+            }
+            .picture {
+                display: block; 
+                text-align: center;
+                margin:auto;
+            }
+            .picture img {
+                height: 100px;
+            }
+            .car-result {
+                display: inline-block;
+                width: 40vw;
+                min-height: 300px;
+            }
+            .decribe {
+                margin: auto;
+            }
+            .decribe-content {
+                height: 130px;
+                text-align: justify;
+            }
+            .title, .classify, .color, .price {
+                text-align: center;
+                margin:auto;
+            }
         }
     </style>
 </head>
@@ -171,9 +207,9 @@
                 <button type="submit" class="bnt-carmodel-submit">Tìm</button>
             </form>
         </div>
-        <div class="search-result" id="result" runat="server">
+        <div id="result" class="search-result">
             
-        </div>
+            <a href="1"><div class="car-result"><div class="picture"><img src="image/car/Acura/ILX/1.jpg"></div><div class="decribe"><div class="title">Acura ILX</div><div class="classify">Sedan</div><div class="price">$18,226</div><div class="color">San Marino Red</div><div class="decribe-content">Acura ILX là một chiếc sedan hạng sang cỡ nhỏ ưu tiên sự thoải mái hơn là tính thể thao. Dựa trên Honda Civic thực dụng, ILX cung cấp khả năng tiết kiệm nhiên liệu tuyệt vời cho việc lái xe hàng ngày. Cabin của nó có nhiều tính năng tiêu chuẩn và hệ thống an toàn cho người lái tiên tiến với mức giá khởi điểm thấp. Một ghế sau nhỏ và công nghệ già cỗi tụt hậu so với các đối thủ cùng phân khúc, nhưng giá trị vô địch của ILX và hệ thống truyền động tinh tế giúp nó trở thành một lựa chọn đáng mơ ước.</div></div></div></a><a href="1"><div class="car-result"><div class="picture"><img src="image/car/Acura/MDX/1.jpg"></div><div class="decribe"><div class="title">Acura MDX</div><div class="classify">SUV</div><div class="price">$30,189</div><div class="color">Modern Steel Metallic</div><div class="decribe-content">Acura MDX là mẫu SUV hạng sang ba hàng ghế nổi bật với công nghệ tiêu chuẩn. Bên dưới kiểu dáng cơ thể góc cạnh, MDX mang đậm chất thể thao, với động cơ V6 mạnh mẽ và khả năng xử lý nhanh nhẹn. Nhiều hỗ trợ lái xe an toàn đạt tiêu chuẩn. Một thiết kế lại năm 2022 đã mang lại cho MDX nhiều không gian hơn cho hành khách và hàng hóa. Cabin được trang bị đầy đủ các tính năng hàng đầu, như khả năng sạc không dây điện thoại trong khi sử dụng Apple CarPlay hoặc Android Auto.</div></div></div></a><a href="1"><div class="car-result"><div class="picture"><img src="image/car/Acura/NSX/1.jpg"></div><div class="decribe"><div class="title">Acura NSX</div><div class="classify">Coupe</div><div class="price">$159,495</div><div class="color">Curva Red</div><div class="decribe-content">Chiếc Acura NSX xuất hiện vào năm 1991, cho thấy Nhật Bản có thể chế tạo siêu xe nhanh như người Ý. Mười một năm sau khi gián đoạn, NSX đã trở lại với phiên bản năm 2016, lần này với hệ thống truyền động hybrid và hệ dẫn động bốn bánh toàn thời gian. Nó vẫn cung cấp khả năng tăng tốc nhanh như vũ bão của siêu xe, mặc dù công nghệ hiện đại nhất đã làm tăng giá thành. Acura NSX là sự lựa chọn tuyệt vời cho những ai tìm kiếm sự độc quyền và cảm giác lái thú vị.</div></div></div></a></div>
     </main>
     <!-- main end -->
     <!-- footer start -->
