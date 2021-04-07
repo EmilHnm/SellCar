@@ -548,28 +548,22 @@
     <Content Include="image\icon\expand_less-24px.svg" />
     <Content Include="image\icon\expand_more-24px.svg" />
     <Content Include="image\icon\menu-24px.svg" />
+    <Content Include="image\favicon.ico" />
     <Content Include="image\logo.png" />
     <Content Include="image\research-and-compare.svg" />
-    <Content Include="index.aspx" />
-    <Content Include="index.html" />
     <Content Include="javascript\index.js" />
     <Content Include="login resgister.html" />
     <Content Include="login.aspx" />
-    <Content Include="register.aspx" />
-    <Content Include="SearchReult.aspx" />
+    <Content Include="logout.aspx" />
+    <Content Include="Register.aspx" />
+    <Content Include="SearchResult.aspx" />
     <Content Include="Web.config" />
+    <Content Include="index.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Car.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="index.aspx.cs">
-      <DependentUpon>index.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="index.aspx.designer.cs">
-      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
@@ -578,20 +572,35 @@
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="register.aspx.cs">
-      <DependentUpon>register.aspx</DependentUpon>
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="register.aspx.designer.cs">
-      <DependentUpon>register.aspx</DependentUpon>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
-    <Compile Include="SearchReult.aspx.cs">
-      <DependentUpon>SearchReult.aspx</DependentUpon>
+    <Compile Include="SearchResult.aspx.cs">
+      <DependentUpon>SearchResult.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="SearchReult.aspx.designer.cs">
-      <DependentUpon>SearchReult.aspx</DependentUpon>
+    <Compile Include="SearchResult.aspx.designer.cs">
+      <DependentUpon>SearchResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserList.cs" />
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

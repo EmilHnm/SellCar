@@ -34,9 +34,6 @@ namespace SellCar
         }
         */
         //
-        public Car()
-        {
-        }
 
         public string[,] NewCarInfo = new string[,]
         {
