@@ -11,25 +11,35 @@ namespace SellCar
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string username = Request.Form["username"];
-            string password = Request.Form["password"];
-            List<UserList> listuser = (List<UserList>)Application["listuser"];
-            int count = 0;
-            foreach(UserList checkuser in listuser)
+            if (Session["loggingin"] != null)
             {
-                if(username == checkuser.username && password == checkuser.password)
+                string username = Request.Form["username"];
+                string password = Request.Form["password"];
+                List<UserList> listuser = (List<UserList>)Application["listuser"];
+                int count = 0;
+                foreach(UserList checkuser in listuser)
                 {
-                    Session["loggingin"] = username;
-                    count++;
-                    alert.InnerHtml = "<span>Xin chào " + username + "<br> <a href='index.aspx'>Quay lại trang chủ</a>";
+                    if(username == checkuser.username && password == checkuser.password)
+                    {
+                        Session["loggingin"] = username;
+                        count++;
+                        if (Request.Cookies[username] != null) {
+                            Response.Cookies[username].Value = "";
+                        }
+                        alert.InnerHtml = "<span>Xin chào " + username + "<br> <a href='index.aspx'>Quay lại trang chủ</a>";
+                    }
                 }
-            }
-            if(count == 0)
-            {
+                if(count == 0)
+                {
 
-                alert.InnerHtml = "<span>Sai tên người dùng hoặc mật khẩu</span><br><a href='login resgister.html'>Quay lại trang đăng nhập</a>";
+                    alert.InnerHtml = "<span>Sai tên người dùng hoặc mật khẩu</span><br><a href='login resgister.html'>Quay lại trang đăng nhập</a>";
                 
-            } 
+                } 
+            } else
+            {
+                alert.InnerHtml = "<span>Một tài khoản khác đã được đăng nhập trên thiết bị này, hãy đăng xuất trước khi đăng nhập một tài khoản khác</span><br><a href='index.html'>Quay lại trang chủ</a>";
+            }
+            
         }
     }
 }

@@ -117,7 +117,8 @@ namespace SellCar
             listNewCar.Add(new Car("Jeep","Renegrade","Candy Apple Red","SUV","2.4L I4","Automatic","Gas","$24,345","image/car/Jeep/Renegade/","Những chiếc SUV cỡ nhỏ cung cấp nhiều thuộc tính mà người mua hàng mong muốn trong một gói hàng cỡ pint. Tuy nhiên, chúng thường không phải phù hợp với địa hình gồ ghề. Jeep Renegade thay đổi điều đó, với thân hình cao ráo, hình hộp và hệ dẫn động bốn bánh có sẵn. Các tính năng an toàn nâng cao cho người lái xe như hỗ trợ giữ làn đường là tiêu chuẩn, cũng như Apple CarPlay và Android Auto. Cabin thoải mái của Renegade rộng rãi ở cả hai hàng và có đủ chỗ chứa hàng cho những chuyến phiêu lưu cuối tuần."));
             */
             List<UserList> listuser = new List<UserList>();
-            Application["listuser"] = new List<UserList>(); 
+            Application["listuser"] = new List<UserList>();
+            
         }
         protected void Session_Start(object sender, EventArgs e)
         {
