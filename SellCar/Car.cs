@@ -7,7 +7,7 @@ namespace SellCar
 {
     public class Car
     {
-        /* Đừng xoá
+        /* 
         public string Manu { get; set; }
         public string Model { get; set; }
         public string Color { get; set; }

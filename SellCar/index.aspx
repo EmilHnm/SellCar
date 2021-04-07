@@ -479,7 +479,7 @@
                     </a>
                 </li>
                 <li class="manu">
-                    <a href="SearchResult.aspx?manu=FIAT">
+                    <a href="SearchResult.aspx?manu=Fiat">
                         <div class="manu-content">
                             <div class="manu-logo">
                                 <img src="image/car-manu-logo/FIAT.png" alt="" class="picture">
@@ -903,7 +903,7 @@
                     </a>
                 </li>
                 <li class="manu">
-                    <a href="SearchResult.aspx?manu=FIAT">
+                    <a href="SearchResult.aspx?manu=Fiat">
                         <div class="manu-content">
                             <div class="manu-logo">
                                 <img src="image/car-manu-logo/FIAT.png" alt="" class="picture">
