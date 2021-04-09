@@ -32,7 +32,7 @@ namespace SellCar
                 {
                     if (Manu == CarInfo[i, 0])
                     {
-                        result.InnerHtml += "<a href='" + 1 + "'>" +
+                        result.InnerHtml += "<a href='Product.aspx?model=" + CarInfo[i,1] + "'>" +
                                                 "<div class='car-result'>" +
                                                     "<div class='picture'>" +
                                                         "<img src = '" + CarInfo[i, 8] + "1.jpg' >" +
@@ -55,7 +55,7 @@ namespace SellCar
                 {
                     if (Classify == CarInfo[i, 3])
                     {
-                        result.InnerHtml += "<a href='" + 1 + "'>" +
+                        result.InnerHtml += "<a href='Product.aspx?model=" + CarInfo[i, 1] + "'>" +
                                                 "<div class='car-result'>" +
                                                     "<div class='picture'>" +
                                                         "<img src = '" + CarInfo[i, 8] + "1.jpg' >" +

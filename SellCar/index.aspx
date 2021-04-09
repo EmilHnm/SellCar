@@ -659,7 +659,7 @@
                     </a>
                 </li>
                 <li class="manu">
-                    <a href="Mazda">
+                    <a href="SearchResult.aspx?manu=Mazda">
                         <div class="manu-content">
                             <div class="manu-logo">
                                 <img src="image/car-manu-logo/Mazda.png" alt="" class="picture">
