@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/assets/style/style.css">
     <link rel="stylesheet" href="/assets/fonts/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="image/favicon.ico">
     <title>Product</title>
     <style>
         #header {
