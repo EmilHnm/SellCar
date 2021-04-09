@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head runat="server">
     <title>SellCar Đăng Ký</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="icon" href="image/favicon.ico">
     <style>
         * {
-            margin:0;
-            padding:0;
+            margin: 0;
+            padding: 0;
         }
+        
         body {
             display: flex;
             width: 100%;
             height: 100vh;
-            
-            
             background: url(image/Background.png) center;
             background-size: cover;
         }
-        .logo { 
+        
+        .logo {
             position: relative;
             top: 0;
             left: 10%;
-            background: linear-gradient(120deg,#ffffff, #ffa500);
+            background: linear-gradient(120deg, #ffffff, #ffa500);
             height: max-content;
             border-radius: 0px 0px 20px 20px;
             box-shadow: 0px 7px 20px 0px #000;
         }
-        input, button {
+        
+        input,
+        button {
             outline: none;
             border: none;
             background: none;
         }
+        
         .wrapper {
             position: relative;
             width: 50vw;
@@ -45,41 +49,48 @@
             align-self: center;
             margin: 0 auto;
         }
+        
         #register {
             left: 15vw;
             position: absolute;
         }
+        
         #login {
             left: 80vw;
             position: absolute;
         }
+        
         h2 {
             width: 100%;
             text-align: center;
         }
+        
         .bnt-box {
             position: relative;
             width: max-content;
-            margin: 30px auto; 
+            margin: 30px auto;
             border-radius: 30px;
             background: #fff;
         }
+        
         .bnt-box button {
             padding: 10px 30px;
             background: transparent;
-            border:0;
+            border: 0;
             position: relative;
             outline: none;
         }
+        
         #bnt {
             top: 0;
             left: 0;
             position: absolute;
-            background-color:  orange;
+            background-color: orange;
             width: 120px;
             height: 100%;
             border-radius: 40px;
         }
+        
         label span {
             display: block;
             text-transform: uppercase;
@@ -87,6 +98,7 @@
             text-align: center;
             margin-top: 20px;
         }
+        
         input {
             display: block;
             width: 70%;
@@ -100,14 +112,18 @@
             height: 28px;
         }
         /* Delay màu bg của autofill */
-        input:-webkit-autofill{
+        
+        input:-webkit-autofill {
             transition: background 9999s;
             -webkit-text-fill-color: #fff;
         }
+        
         input::placeholder {
             color: #ffffffb2;
         }
-        #rbnt, #lbnt {
+        
+        #rbnt,
+        #lbnt {
             display: block;
             margin: 0 auto;
             width: 25vw;
@@ -118,6 +134,7 @@
             font-size: 20px;
             font-weight: bold;
         }
+        
         #alert {
             margin-top: 5px;
             width: 100%;
@@ -125,9 +142,17 @@
             color: red;
             height: 15px;
         }
+        /* responsive */
+        
+        @media screen and (max-width:698px) {
+            .wrapper {
+                width: 80vw;
+            }
+        }
     </style>
 </head>
-<body>
+
+<body>r
     <div class="logo">
         <a href="index.html">
             <img src="image/logo.png" alt="" srcset="" width="100px;">
@@ -180,16 +205,16 @@
                 alert.innerHTML = "Hãy nhập mật khẩu";
             } else {
                 alert.innerHTML = "";
-            }    
+            }
         }
-        repassword.onkeyup = function () {
+        repassword.onkeyup = function() {
             if (repassword != password) {
                 alert.innerHTML = "Nhập lại mật khẩu không khớp";
             } else {
                 alert.innerHTML = "";
             }
         }
-        username.onkeyup = function () {
+        username.onkeyup = function() {
             if (username.value == "") {
                 alert.innerHTML = "Không được để tên người dùng trống";
             } else {
@@ -203,6 +228,7 @@
             document.getElementById("login").style.left = "80vw";
             document.getElementById("bnt").style.left = "0vw";
         }
+
         function login() {
             document.getElementById("register").style.left = "-60vw";
             document.getElementById("login").style.left = "15vw";
@@ -210,4 +236,5 @@
         }
     </script>
 </body>
+
 </html>
