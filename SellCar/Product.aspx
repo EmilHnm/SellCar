@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/assets/fonts/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="icon" href="image/favicon.ico">
-    <title>Product</title>
+    <title runat="server"></title>
     <style>
         #header {
             display: flex;

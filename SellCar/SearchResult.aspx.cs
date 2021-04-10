@@ -17,13 +17,13 @@ namespace SellCar
             string Classify = Request.QueryString["Classify"];
             if (Session["loggingin"] != null)
             {
-                mainnavbar.InnerHtml = "<a href='index.html' class='navbar-item'>Mua xe</a>" +
+                mainnavbar.InnerHtml = "<a href='index.aspx' class='navbar-item'>Mua xe</a>" +
                       "<a href ='' class='navbar-item'>Bán xe</a>" +
                     "<a href = '' class='navbar-item'>Định giá xe</a>" +
                     "<a href = '' class='navbar-item'>Đại lý ô tô</a>" +
                     "<a href = '' class='navbar-item'>Khuyến mãi</a>" +
                     "<a href = '' class='navbar-item'>Tin tức</a>" +
-                    "<a href = '' class='log-button'>" + Session["loggingin"].ToString() + "</a>" +
+                    "<a href = 'UserFavorite.aspx' class='log-button'>" + Session["loggingin"].ToString() + "</a>" +
                     "<a href = 'logout.aspx' class='log-button'>Đăng xuất</a>";
             }
             if (Classify == null)

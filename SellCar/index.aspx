@@ -479,7 +479,7 @@
                     </a>
                 </li>
                 <li class="manu">
-                    <a href="SearchResult.aspx?manu=Fiat">
+                    <a href="SearchResult.aspx?manu=FIAT">
                         <div class="manu-content">
                             <div class="manu-logo">
                                 <img src="image/car-manu-logo/FIAT.png" alt="" class="picture">
@@ -1303,7 +1303,7 @@
             <h2>Nghiên cứu, so sánh, tìm kiếm chiếc xe phù hợp với bạn</h2>
             <p>Sử dụng nguồn dữ liệu của chúng tôi để so sánh, tìm kiếm chiếc xe mà bạn mong muốn.</p>
             <br>
-            <form action="" method="get" name="manu">
+            <form action="Product.aspx" method="get" name="manu">
                 <select id="manu-selection-list" onchange="showModel()">
                     <option value="Acura">Acura</option>
                     <option value="Alfa Romeo">Alfa Romeo</option>

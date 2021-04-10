@@ -558,6 +558,7 @@
     <Content Include="Product.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="SearchResult.aspx" />
+    <Content Include="UserFavorite.aspx" />
     <Content Include="Web.config" />
     <Content Include="index.aspx" />
   </ItemGroup>
@@ -601,6 +602,13 @@
     </Compile>
     <Compile Include="SearchResult.aspx.designer.cs">
       <DependentUpon>SearchResult.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserFavorite.aspx.cs">
+      <DependentUpon>UserFavorite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserFavorite.aspx.designer.cs">
+      <DependentUpon>UserFavorite.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserList.cs" />
     <Compile Include="index.aspx.cs">

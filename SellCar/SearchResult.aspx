@@ -166,7 +166,7 @@
     <!-- main start -->
     <main>
         <div class="search-box">
-            <form action="" method="post" >
+            <form action="Product.aspx" method="get" >
                 <select name="manu" id="manu-selection-list" onchange="showModel()">
                     <option value="Acura">Acura</option>
                     <option value="Alfa Romeo">Alfa Romeo</option>

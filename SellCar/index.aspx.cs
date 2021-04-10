@@ -19,7 +19,7 @@ namespace SellCar
                     "<a href = '' class='navbar-item'>Đại lý ô tô</a>" +
                     "<a href = '' class='navbar-item'>Khuyến mãi</a>" +
                     "<a href = '' class='navbar-item'>Tin tức</a>" +
-                    "<a href = '' class='log-button'>" + Session["loggingin"].ToString() + "</a>" +
+                    "<a href = 'UserFavorite.aspx' class='log-button'>" + Session["loggingin"].ToString() + "</a>" +
                     "<a href = 'logout.aspx' class='log-button'>Đăng xuất</a>";
             }
         }
