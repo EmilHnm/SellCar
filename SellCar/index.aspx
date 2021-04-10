@@ -338,11 +338,11 @@
             <input type="checkbox" name="" id="nav-active">
             <div class="nav-content" style="margin: 0">
                 <div id="mainnavbar" class="main-navbar" runat="server">
-                    <a href="index.html" class="navbar-item">Mua xe</a>
+                    <a href="index.aspx#car-select" class="navbar-item">Mua xe</a>
                     <a href="" class="navbar-item">Bán xe</a>
                     <a href="" class="navbar-item">Định giá xe</a>
                     <a href="" class="navbar-item">Đại lý ô tô</a>
-                    <a href="" class="navbar-item">Khuyến mãi</a>
+                    <a href="" class="navbar-item">Khuyến mãi</a> 
                     <a href="" class="navbar-item">Tin tức</a>
                     <a href="login resgister.html" class="log-button">Đăng nhập</a>
                     <a href="login resgister.html" class="log-button">Đăng ký</a>
@@ -356,14 +356,14 @@
         <div class="first-container">
             <h1>Lựa chọn chiếc xe phù hợp với ví tiền của bạn</h1>
             <div class="car-content">
-                <a class="NewButton" href="">Xe mới</a>
+                <a class="NewButton" href="#car-select">Xe mới</a>
                 <a href="" class="OldButton">Xe cũ</a>
                 <a href="" class="SellCar">Bán xe</a>
             </div>
         </div>
     </div>
     <div class="second-container">
-        <h2>Lựa chọn theo hãng xe</h2>
+        <h2 id="car-select">Lựa chọn theo hãng xe</h2>
         <div class="tab-title">
             <button class="tab-link tab-active" onclick="tabber(event,'new-car')">Xe mới</button>
             <button class="tab-link" onclick="tabber(event, 'old-car')">Xe cũ</button>

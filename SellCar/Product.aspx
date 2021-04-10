@@ -269,7 +269,7 @@
             <input type="checkbox" name="" id="nav-active">
             <div class="nav-content" style="margin: 0">
                 <div id="mainnavbar" class="main-navbar" runat="server">
-                    <a href="index.html" class="navbar-item">Mua xe</a>
+                    <a href="index.aspx#car-select" class="navbar-item">Mua xe</a>
                     <a href="" class="navbar-item">Bán xe</a>
                     <a href="" class="navbar-item">Định giá xe</a>
                     <a href="" class="navbar-item">Đại lý ô tô</a>
@@ -311,7 +311,7 @@
             <div class="contact">
                 <div id="price" runat="server">$999999999</div>
                 <a class="call" href="tel:012345678">Liên hệ</a>
-                <button class="favorite">Thêm vào ưa thích</button>
+                <button class="favorite" type='button' runat="server" onserverclick="AddFavorite">Thêm vào ưa thích</button>
             </div>
             <div class="infomation">
                 <div class="stat-content">

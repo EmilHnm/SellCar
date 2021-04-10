@@ -25,15 +25,16 @@ namespace SellCar
                     "<a href = '' class='log-button'>" + Session["loggingin"].ToString() + "</a>" +
                     "<a href = 'logout.aspx' class='log-button'>Đăng xuất</a>";
             }
-            for (int i =0; i<101; i++){
-                if(model == CarInfo[i,1])
+            for (int i = 0; i < 101; i++)
+            {
+                if (model == CarInfo[i, 1])
                 {
                     title.InnerText = CarInfo[i, 0] + ' ' + CarInfo[i, 1];
                     img1.InnerHtml = "<img src='" + CarInfo[i, 8] + "1.jpg' style='width: 100%; height: 60vh'>";
                     img2.InnerHtml = "<img src='" + CarInfo[i, 8] + "2.jpg' style='width: 100%; height: 60vh'>";
                     img3.InnerHtml = "<img src='" + CarInfo[i, 8] + "3.jpg' style='width: 100%; height: 60vh'>";
                     img4.InnerHtml = "<img src='" + CarInfo[i, 8] + "4.jpg' style='width: 100%; height: 60vh'>";
-                    thumbnail1.InnerHtml = "<img src = '"+CarInfo[i,8]+ "1.jpg' class='demo' style='width:100%' onclick='currentSlide(1)'>";
+                    thumbnail1.InnerHtml = "<img src = '" + CarInfo[i, 8] + "1.jpg' class='demo' style='width:100%' onclick='currentSlide(1)'>";
                     thumbnail2.InnerHtml = "<img src = '" + CarInfo[i, 8] + "2.jpg' class='demo' style='width:100%' onclick='currentSlide(2)'>";
                     thumbnail3.InnerHtml = "<img src = '" + CarInfo[i, 8] + "3.jpg' class='demo' style='width:100%' onclick='currentSlide(3)'>";
                     thumbnail4.InnerHtml = "<img src = '" + CarInfo[i, 8] + "4.jpg' class='demo' style='width:100%' onclick='currentSlide(4)'>";
@@ -45,6 +46,17 @@ namespace SellCar
                     engine.InnerText = CarInfo[i, 4];
                     decribe.InnerText = CarInfo[i, 9];
                 }
+            }
+        }
+
+        protected void AddFavorite(object sender, EventArgs e)
+        {
+            string model = Request.QueryString["model"];
+           
+            if (Session["loggingin"] != null)
+            { 
+                string username = Session["loggingin"].ToString();
+                Response.Cookies[username].Value = Request.Cookies[username].Value + model + "|";
             }
         }
     }

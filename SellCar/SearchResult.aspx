@@ -150,7 +150,7 @@
                 <input type="checkbox" name="" id="nav-active">
                 <div class="nav-content" style="margin:0">
                     <div id="mainnavbar" class="main-navbar" runat="server">
-                        <a href="index.html" class="navbar-item navbutton-active">Mua xe</a>
+                        <a href="index.aspx#car-select" class="navbar-item navbutton-active">Mua xe</a>
                         <a href="" class="navbar-item">Bán xe</a>
                         <a href="" class="navbar-item">Định giá xe</a>
                         <a href="" class="navbar-item">Đại lý ô tô</a>
