@@ -152,10 +152,10 @@
                     <div id="mainnavbar" class="main-navbar" runat="server">
                         <a href="index.aspx#car-select" class="navbar-item navbutton-active">Mua xe</a>
                         <a href="" class="navbar-item">Bán xe</a>
-                        <a href="" class="navbar-item">Định giá xe</a>
-                        <a href="" class="navbar-item">Đại lý ô tô</a>
-                        <a href="" class="navbar-item">Khuyến mãi</a>
-                        <a href="" class="navbar-item">Tin tức</a>
+                        <a href="Updating.aspx" class="navbar-item">Định giá xe</a>
+                        <a href="Updating.aspx" class="navbar-item">Đại lý ô tô</a>
+                        <a href="Updating.aspx" class="navbar-item">Khuyến mãi</a>
+                        <a href="Updating.aspx" class="navbar-item">Tin tức</a>
                         <a href="" class="log-button">Đăng nhập</a>
                         <a href="" class="log-button">Đăng ký</a>
                     </div>

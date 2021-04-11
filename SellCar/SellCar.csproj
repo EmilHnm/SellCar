@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="css\index.css" />
     <Content Include="Global.asax" />
+    <Content Include="Updating.html" />
     <Content Include="image\Background.png" />
     <Content Include="image\car-classify-icon\iconConvertable.svg" />
     <Content Include="image\car-classify-icon\iconCoupes.svg" />
